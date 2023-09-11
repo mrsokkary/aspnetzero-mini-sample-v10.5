@@ -29,6 +29,7 @@ namespace MyCompanyName.AbpZeroTemplate.Web.Controllers
                 new CookieOptions
                 {
                     Expires = DateTimeOffset.Now.AddYears(5),
+                     HttpOnly = true,  // Added by mrajmalhassan@gmail.com (Apply HttpOnly on Auth Cookie Asp.net core)
                     Path = "/"
                 }
             );
